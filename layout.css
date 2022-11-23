@@ -1,0 +1,162 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+}
+#special {
+    background-image: url("./images/special-bg.png");
+    background-position-y: bottom;
+    background-repeat-y: no-repeat;
+    background-color: #697F87;
+    color: white;
+    display: flex;
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+}
+h1, li {
+    padding-bottom: 0.5rem;
+}
+.special-main {
+    color: #AEB8C3;
+}
+#wrapper {
+    background-image: url("./images/grunge.png");
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: auto;
+}
+#figure-top, #figure-pretzel, #figure-bottom {
+    display: flex;
+    justify-content: center;
+}
+#logo-mark {
+    max-width: 15%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+header {
+    flex-basis: 100%;
+}
+nav {
+    padding: 1rem;
+    border-bottom: solid lightgrey 2px;
+    padding-bottom: 2rem;
+}
+#navilist {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Courier New', Courier, monospace;
+}
+.pretzel-links {
+    column-count: 2;
+}
+.navtitle {}
+
+.navtitle:hover {
+    font-weight: bold;
+}
+.navtitle-desktop-only {
+    display: none;
+}
+#main {
+    padding-top: 2rem;
+}
+#main-intro {
+    padding-bottom: 1rem;
+}
+#pretzel-image {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+}
+.kappale {
+    padding-bottom: 1rem;
+}
+#sidebar {
+    padding-top: 2rem;
+}
+#callout1 {
+    background-color: #F6E8C8;
+    padding: 4rem;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+}
+#callout2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: solid lightgrey 2px;
+}
+#callout3 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: solid lightgrey 2px;
+}
+#callout4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+footer {
+    padding-top: 1rem;
+    color: darkgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    flex-basis: 100%;
+}
+#sb-logo {
+    max-width: 100%;
+    height: auto;
+    padding: 2rem;
+}
+
+/* Tablet-näkymän css-säännöt. */
+@media only screen and (min-width: 426px) {
+    nav {
+        display: flex;
+        padding-bottom: 1rem;
+    }
+    #logo-mark {
+        max-width: 100%;
+        height: auto;
+    }
+    #navilist {
+        flex-basis: 100%;
+        align-items: center;
+    }
+}
+
+/* Desktop-näkymän css-säännöt. */
+@media only screen and (min-width: 769px) {
+    .navtitle-desktop-only {
+        display: flex;
+    }
+    #wrapper {
+        width: 960px;
+    }
+    #special {
+        width: 960px;
+    }
+    #main {
+        width: 60%;
+    }
+    #sidebar {
+        width: 40%;
+        padding-left: 3rem;
+    }
+    #figure-top, nav ul li {
+        width: 20%;
+    }
+    #article-column {
+        display: flex;
+    }
+    footer {
+        padding-top: 3rem;
+    }
+}
